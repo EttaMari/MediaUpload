@@ -35,6 +35,7 @@ $dbname = "databaseimage";
                 echo "Thats not an image.";
               else{
                 $sql = "INSERT INTO store VALUES('','image_name','$image')";
+                $conn->query($sql);
                 echo "File uploaded into the database.";
               }
             }
